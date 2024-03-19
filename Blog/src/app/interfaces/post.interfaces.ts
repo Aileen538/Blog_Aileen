@@ -1,4 +1,5 @@
 export interface Post  {
+    category: string;
     title: string,
     subtitle: string,
     thumbnail: string,
