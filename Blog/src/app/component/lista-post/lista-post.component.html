@@ -1,0 +1,21 @@
+<h1>Lista de Posts</h1>
+
+<nav>
+    <ul>
+        <li><a routerLink="/posts">Inicio</a></li>
+        <li><a routerLink="/new">Crear Nuevo Post</a></li> <!-- Este es el enlace para crear un nuevo post -->
+    </ul>
+</nav>
+
+<div>
+    <button (click)="resetFiltro()">Mostrar Todos</button>
+    <button *ngFor="let categoria of categorias" (click)="filtrarPorCategoria(categoria)">{{ categoria }}</button>
+</div>
+
+<div *ngFor="let post of posts">
+    <h2>{{ post.titulo }}</h2>
+    <p>{{ post.texto }}</p>
+    <p>Autor: {{ post.autor }}</p>
+    <p>Fecha: {{ post.fecha }}</p>
+    <p>Categoría: {{ post.categoria }}</p>
+</div>

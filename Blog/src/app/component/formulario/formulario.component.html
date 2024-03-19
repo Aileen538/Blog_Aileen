@@ -1,0 +1,25 @@
+
+<form (submit)="onSubmit()">
+    <h1>Crear Nuevo Post</h1>
+    <div class="mb-3">
+        <label class="form-label">Título:</label>
+        <input type="text" class="form-control" [(ngModel)]="post.titulo" name="titulo" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Texto:</label>
+        <input type="text" class="form-control" [(ngModel)]="post.texto" name="texto" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Autor:</label>
+        <input type="text" class="form-control" [(ngModel)]="post.autor" name="autor" required>
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Categoría:</label>
+        <input type="text" class="form-control" [(ngModel)]="post.categoria" name="categoria" required>
+    </div>
+
+    <input type="submit" value="Enviar" class="btn btn-info" />
+</form>
