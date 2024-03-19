@@ -1,5 +1,6 @@
 import { Injectable, inject } from '@angular/core';
-import { Post } from '../interfaces/post.interface';
+import { Post } from '../interfaces/new.interface';
+
 
 @Injectable({
   providedIn: 'root'
@@ -20,4 +21,6 @@ export class PostService {
   getByCategoria(categoria: string): Post[] {
     return this.posts.filter(post => post.categoria === categoria);
   }
+ 
+
 }

@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:blog": "node dist/blog/server/server.mjs"
+    "serve:ssr:Blog": "node dist/blog/server/server.mjs"
   },
   "private": true,
   "dependencies": {
@@ -24,7 +24,7 @@
     "bootstrap": "^5.3.3",
     "express": "^4.18.2",
     "rxjs": "~7.8.0",
-    "sweetalert2": "^11.10.6",
+    "startbootstrap-clean-blog": "^6.0.9",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
   },

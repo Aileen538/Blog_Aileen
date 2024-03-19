@@ -1,7 +1,8 @@
-import { Component, OnInit, inject } from '@angular/core';
-import { PostService } from '../../service/post.service';
-import { Post } from '../../interfaces/post.interface';
+import { Component } from '@angular/core';
+import { PostService } from '../../services/post.service';
+import { Post } from '../../interfaces/new.interface';
 import { FormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-formulario',
@@ -10,8 +11,8 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './formulario.component.html',
   styleUrl: './formulario.component.css'
 })
-
 export class FormularioComponent {
+  
   post: Post = {
     titulo: '',
     texto: '',
@@ -33,3 +34,5 @@ export class FormularioComponent {
     };
   }
 }
+
+

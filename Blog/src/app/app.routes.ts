@@ -1,21 +1,13 @@
-import { RouterModule, Routes } from '@angular/router';
-import { ListaPostsComponent } from './component/lista-post/lista-post.component';
+import { Routes } from '@angular/router';
+import { HomeComponent } from './component/home/home.component';
+import { AboutComponent } from './component/about/about.component';
+import { BlogPostComponent } from './component/blog-post/blog-post.component';
 import { FormularioComponent } from './component/formulario/formulario.component';
-import { NgModule } from '@angular/core';
 
 export const routes: Routes = [
-   { path: 'posts', component: ListaPostsComponent },
-  { path: 'new', component: FormularioComponent },
-  { path: '', redirectTo: '/posts', pathMatch: 'full' },
-  { path: '**', redirectTo: '/posts' }
+{path: '',redirectTo:'/home',pathMatch:'full'},
+    {path: 'home', component: HomeComponent},
+    {path:'about', component: AboutComponent},
+    {path:'new', component: FormularioComponent},
+    {path:':postId',component:BlogPostComponent},
 ];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
-   
-  
-})
-export class AppRoutingModule { }
-export class AppModule { }
-

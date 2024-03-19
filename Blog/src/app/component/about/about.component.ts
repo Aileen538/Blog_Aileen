@@ -11,9 +11,9 @@ import { HeaderData, HeaderService } from '../../services/header.service';
 export class AboutComponent {
 
   private uiData : HeaderData = {
-        title: 'Sobre mí',
-        subtitle: 'Esta soy yo',
-        thumbnail: 'http://placehold.co/300x200'
+        title: 'new Post',
+        subtitle: '',
+        thumbnail: ''
     }
 
   constructor(private headerService: HeaderService){

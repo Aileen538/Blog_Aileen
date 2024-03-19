@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
     private uiData : HeaderData = {
         title: 'Bienvenidos',
         subtitle: 'Blog De Aileen',
-        thumbnail: 'http://placehold.co/300x200'
+        thumbnail: ''
     }
 
     constructor(private headerService: HeaderService) { } 

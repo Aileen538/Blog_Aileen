@@ -9,4 +9,6 @@ export type HeaderData = Pick<Post, 'title'|'subtitle'|'thumbnail'>
 export class HeaderService {
 uiData = signal<HeaderData> ({title:'',subtitle:'',thumbnail:''})
   static uiData: any;
+
+  
 }
